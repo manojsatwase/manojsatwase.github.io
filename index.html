@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+       <meta name="action-cable-url" content="wss:https://manojsatwase.github.io/" />
+       <meta name="real-time-likes" content="false">
+       <meta property="og:site_name" keyword="manoj satwase" content="My Portfolio">
+       <meta name="description" content="manoj satwase" />
+       <meta property="og:description" content="manoj satwase">
+       <meta property="og:title" content="My Portfolio">
+       <meta name='twitter:card' content= 'summary_large_image'>
+       <meta name="twitter:description" content="manoj satwase">
+       <meta name="twitter:title" content="My Portfolio">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- font awesome -->
+
+	<script src="https://kit.fontawesome.com/215e28a68e.js"></script>
+
+	<!-- <link rel="stylesheet" href="./lib/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+</head>
+<body data-spy="scroll">
+	<!-- preloader -->
+            <div class="loading-bar">
+		<div class="loading-bar__item"></div>
+	    </div>
+	<!-- end preloader -->
+	<header id="top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+			<div class="logo">
+				<a class="brand-logo" href="#">MS</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto ">
+					<li class="nav-item active ">
+						<a class="nav-link mx-2 " href="#top">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-2 " href="#about">About</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link mx-2" href="#education">Education</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-2" href="#skills">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-2" href="#project">My Project</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- end header -->
+	<div class="container-fluid">
+		<section class="row">
+			<div class="fill-screen " style="background-image:url(./images/laptop-1.jpg);">
+				<img class="title rounded-circle img-fluid" src="./images/mylogo.jpeg" style="width:340px;height:360px;">
+				<div class="title first-name ">Manoj <span class="last-name">Satwase</span></div>
+				<h3 class="header-title title wow zoomIn" data-wow-delay="0.5s">( Full Stack JS Developer )</h3>
+				<div class="hidden-xs down-button down-icon"
+					onclick="$('#about').animatescroll({scrollSpeed: 3000, padding:50});">
+					<a href="#">
+						<i class="fas fa-chevron-circle-down"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- end of background imgage center -->
+		<!-- about me -->
+		<section class="row portfolio-section" id="about">
+			<article class="col-md-12 sec-header">
+				<h3 class="my-5"><i class="fas fa-user"></i><span>About Me</span></h3>
+				<hr>
+			</article>
+			<article class="col-md-6">
+				<h1>About Me:</h1>
+				<p class="pt-3"> I’m a Full Stack Developer in building website with a big interest in pure CSS3 ,HTML5, Bootstrap4 and Javascript,React Js Node Js and  MongoDB 
+			          illustrations and beautiful animation. I like first responsive design, progressive enhancement and single page application.
+				</p>
+			</article>
+			<article class="col-md-6 table-custom ">
+				<dl class="row">
+					<dt class="col-sm-3">Email</dt>
+					<dd class="col-sm-9">manojsatwase123@gmail.com</dd>
+					<dt class="col-sm-3">Address</dt>
+					<dd class="col-sm-9">
+						<address>SIOM, Sinhgad Institute, Vadgaon, Pune, Maharashtra<br> India - 411041 </address>
+					</dd>
+					<dt class="col-sm-3">Mobile</dt>
+					<dd class="col-sm-9">+91 12345 12345</dd>
+				</dl>
+				<br>
+				<div class="social">
+					<a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+					<a href="https://twitter.com/manoj_satwase"><i class="fab fa-twitter"></i></a>
+					<a href="https://github.com/manojsatwase/manojsatwase.github.io"><i class="fab fa-github"></i></a>
+					<a href="#"><i class="fab fa-codepen"></i></a>
+				</div>
+			</article>
+		</section>
+		<!-- end of about me -->
+		<section class="row">
+			<div class="fill-screen background-attachment" style="background-image: url(./images/work-1.jpg);"></div>
+		</section>
+		<!-- education-->
+		<section class="row portfolio-section" id="education">
+			<article class="sec-header col-lg-12">
+				<h3 class="my-5"><i class="fa fa-graduation-cap"></i> <span>Education</span></h3>
+				<hr>
+			</article>
+
+			<article class="col-12  mx-auto">
+				<div class="activity-elements py-5">
+
+					<div class="card3D wow fadeInLeft" data-wow-delay="2s" class="col-sm-6">
+						<div class="front">
+							<div>
+								<h2><i class="fa fa-graduation-cap"></i></h2>
+								<h4>Master of computer Application</h4>
+								<h6>SIOM, Pune, MH, India</h6>
+							</div>
+						</div>
+						<div class="back">
+							<div>
+								<h2><i class="fa fa-graduation-cap"></i></h2>
+								<h4><abbr data-toggle="tooltip" title="Sinhgad Institute Of Management Pune"
+										class="initialism" data-placement="bottom">SIOM/REC</abbr></h4>
+								<h6>58.79%</h6>
+							</div>
+						</div>
+					</div>
+
+					<div class="card3D wow fadeInLeft" data-wow-delay="1.8s" class="col-sm-6">
+						<div class="front">
+							<div>
+								<h2><i class="fa fa-graduation-cap"></i></h2>
+								<h4>Bachelor of computer Application</h4>
+								<h6><abbr title="Brijlal Biyani Science College Amravati"
+										class="tooltipbottom">BBSCA,</abbr> Amravati, MH, India</h6>
+
+							</div>
+						</div>
+						<div class="back">
+							<div>
+								<h2><i class="fa fa-graduation-cap"></i></h2>
+								<h4><abbr data-toggle="tooltip" title="Brijlal Biyani Science College Amravati"
+										class="initialism" data-placement="bottom">BBSC/REC</abbr></h4>
+								<h6>56.64%</h6>
+							</div>
+						</div>
+					</div>
+					<!-- card start -->
+					<div class="card3D wow fadeInLeft" data-wow-delay="1.4s" class="col-sm-6">
+						<div class="front">
+							<div>
+								<h2><i class="fa fa-graduation-cap"></i></h2>
+								<h4>Higher Secondary Education</h4>
+								<h6>HSC, Amravati, MH, India</h6>
+							</div>
+						</div>
+						<div class="back">
+							<div>
+								<h2><i class="fa fa-graduation-cap"></i></h2>
+								<h4>HSC/REC</h4>
+								<h6>54.33%</h6>
+							</div>
+						</div>
+					</div>
+					<!-- card end -->
+					<!-- card start -->
+					<div class="card3D wow fadeInLeft" data-wow-delay="0.4s" class="col-sm-6">
+						<div class="front">
+							<div>
+								<h2><i class="fa fa-graduation-cap"></i></h2>
+								<h4> Secondary School Education</h4>
+								<h6>SSC, Amravati, MH, India</h6>
+							</div>
+						</div>
+						<div class="back">
+							<div>
+								<h2><i class="fa fa-graduation-cap"></i></h2>
+								<h4>SSC/REC</h4>
+								<h6>57.60%</h6>
+							</div>
+						</div>
+					</div>
+					<!-- card end -->
+				</div>
+				<!-- active -->
+			</article>
+
+		</section>
+		<!-- end of education -->
+
+		<section class="row">
+			<div class="fill-screen fixed-attachment" style="background-image: url(./images/work-desk-1.jpg)"></div>
+		</section>
+		
+		
+		<section class="row portfolio-section" id="skills">
+		
+			<article class="sec-header col-md-12 col-xs-8">
+				<h3 class="my-5"><i class="fa fa-cogs"></i><span>Skills</span></h3>
+				<hr>
+			</article>
+		<article class="col-md-12 ">
+					<div class="col-xs-8 col-md-6 offset-md-3 ">
+						<div class="progress">
+							<div class="progress-bar js" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100"><span>JAVASCRIPT ES6(Features)<span class="float-right mr-5"
+										style="color:#0fff04;">Advanced</span></span>
+							</div>
+						</div>
+					</div>
+			                 <div class="col-xs-8 col-md-6 offset-md-3 ">
+						<div class="progress">
+							<div class="progress-bar ds" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100"><span>JavaScript Algorithms And Data Structures<span class="float-right mr-5"
+										style="color:#0fff04;">Learning</span></span>
+							</div>
+						</div>
+					</div>
+				<div class="col-xs-8 col-md-6 offset-md-3 ">
+					<div class="progress">
+						<div class="progress-bar html" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+							aria-valuemax="100"><span>HTML5/CSS3<span class="float-right mr-5"
+									style="color:#0fff04;">Advanced</span></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-8 col-md-6 offset-md-3 ">
+					<div class="progress">
+						<div class="progress-bar bootstrap" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+							aria-valuemax="100"><span>BOOTSTRAP 4<span class="float-right mr-5"
+									style="color:#0fff04;">Advanced</span></span>
+						</div>
+					</div>
+				</div>
+		
+			<div class="col-xs-8 col-md-6 offset-md-3 ">
+					<div class="progress">
+						<div class="progress-bar NodeJS" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+							aria-valuemax="100"><span>NODE JS<span class="float-right mr-5"
+									style="color:#0fff04;">Intermediate</span></span>
+						</div>
+					</div>
+				</div>
+			    <div class="col-xs-8 col-md-6 offset-md-3 ">
+					<div class="progress">
+						<div class="progress-bar ReactJS" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+							aria-valuemax="100"><span>REACT JS<span class="float-right mr-5"
+									style="color:#0fff04;">Intermediate</span></span>
+						</div>
+					</div>
+				</div>
+			  <div class="col-xs-8 col-md-6 offset-md-3 ">
+					<div class="progress">
+						<div class="progress-bar MongoDB" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+							aria-valuemax="100"><span>MONGO DB<span class="float-right mr-5"
+									style="color:#0fff04;">Begginer</span></span>
+						</div>
+					</div>
+				</div>
+			     <div class="col-xs-8 col-md-6 offset-md-3 ">
+					<div class="progress">
+						<div class="progress-bar jquery" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+							aria-valuemax="100"><span>JQuery<span class="float-right mr-5"
+									style="color:#0fff04;">Intermediate</span></span>
+						</div>
+					</div>
+				</div>
+						<hr>
+			</article>	
+			<article class="col-md-6 col-sm-6  skill-cards">
+					<div class="skill-tech">
+						<h4><i class="fa fa-code"></i> Coding</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quidem.</p>
+					</div>
+				</article>
+						<article class="col-md-6 col-sm-6  skill-cards">
+				<div class="skill-tech">
+						<div class="skill-tech">
+							<h4><i class="far fa-heart"></i> Design</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quidem.</p>
+						</div>
+				</article>
+							<article class="col-md-6 col-sm-6  skill-cards">
+					<div class="skill-tech">
+						<h4><i class="fa fa-globe"></i> Web Development</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quidem.</p>
+					</div>
+				</article>
+				<div class="col-md-6 col-sm-6">
+					<div class="skill-tech">
+						<h4><i class="fa fa-database"></i> Database</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quidem.</p>
+					</div>
+			</article>
+	
+						</section>
+						<!-- end of skills -->
+
+	<section class="row">
+		<div class="fill-screen background-attachment" style="background-image: url(./images/work-desk-2.jpg);"></div>
+	</section>
+
+			<!-- my work -->
+			<section class="row portfolio-section" id="project">
+				<article class="sec-header col-lg-12">
+					<h3 class="my-5"><i class="fas fa-code"></i> <span>Projects</span></h3>
+					<hr>
+						<article class="container">
+							<p class="text-justify">Examples of my latest projects build with HTML, CSS and JavaScript. My portfolio includes static websites, web
+								applications and illustrations made with pure CSS offering an insight into my recent accomplishments.</p>
+				</article>
+				<!-- end of container -->
+					<div class="col px-5 pb-5 all-button">
+						<button class="btn btn-outline-secondary text-uppercase mx-1 filter-btn" data-filter="all">all</button>
+						<button class="btn btn-outline-secondary text-uppercase mx-1 filter-btn" data-filter="Website">Website</button>
+						<button class="btn btn-outline-secondary text-uppercase mx-1 filter-btn" data-filter="webapp">Webapp</button>
+						<button class="btn btn-outline-secondary text-uppercase mx-1 filter-btn" data-filter="react">react app</button>
+					</div>
+					<div class="container">
+						<div class="row">
+						<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+							<div class="card ">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/uicolorcode/index.html">
+										<img src="images/uicolorcode.jpg" class="img-thumbnail img-fluid" alt="uicolorcode">
+					
+										<h1 class="projects-front-footer-title">UI Color Code Picker</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Web App </h2>
+											<p class="projects-body">UI color code for developer is copy hexacode and use own website</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/uicolorcode/index.html" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://github.com/manojsatwase/manojsatwase.github.io/tree/master/uicolorcode" target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+		
+						<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+							<div class="card ">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/Dice_Roll_Game/diceRoll.html">
+										<img src="images/diceRollGame.jpg" class="img-thumbnail img-fluid" alt="DiceRollGame">
+					
+										<h1 class="projects-front-footer-title">Dice_Roll Game</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Web App </h2>
+											<p class="projects-body">this is Dice Roll Game play two player after won score is 50  and technology used in Html css3 Bootstrap 4 and Javascript </p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/Dice_Roll_Game/diceRoll.html" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/Dice_Roll_Game/diceRoll.html" target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+							<div class="card ">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/Quiz/index.html">
+										<img src="images/quiz.png" class="img-thumbnail img-fluid" alt="Quiz App">
+					
+										<h1 class="projects-front-footer-title">Quiz Application</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Web App </h2>
+											<p class="projects-body">An OOP quiz app with vanilla javascript ES6 Module pattern and revealing module pattern JS used in this App.</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/Quiz/index.html" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/Quiz/index.html" target="_blank">GitHub</a>
+
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+							<div class="card ">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/SearchMobilePhone/index.html">
+										<img src="images/searchBacg.jpg" class="img-thumbnail img-fluid" alt="search">
+					
+										<h1 class="projects-front-footer-title">Search Mobile Phone Item</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Web modal </h2>
+											<p class="projects-body">this is Search Mobile Phone Item modal Project and technology used in Html css3 Bootstrap 4 and Javascript </p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/SearchMobilePhone/index.html" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/SearchMobilePhone/index.html" target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+							<div class="card ">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/Off_Canvas_Menu/index.html">
+										<img src="images/OffCanvasMenu.jpg" class="img-thumbnail img-fluid" alt="Off_Canvas_Menu">
+					
+										<h1 class="projects-front-footer-title">Off Canvas Menu Modal</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Web Modal </h2>
+											<p class="projects-body">this is Off Canvas Menu Modal to develope in front end technology is Html css3 Bootstrap 4 and Javascript </p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/Off_Canvas_Menu/index.html" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/Off_Canvas_Menu/index.html" target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						
+						<div class="col-lg-6 col-xl-4 webapp store-item wow zoomIn" data-item="webapp">
+							<div class="card">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/todo/">
+										<img src="images/todos.jpg" class="img-thumbnail img-fluid" alt="">
+					
+										<h1 class="projects-front-footer-title">todo app</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">todo app </h2>
+											<p class="projects-body">Web App Mini Todo App to Display Item of List Using Technology is HTML , CSS3 and JavaScript ES6 Features</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/todo/" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://github.com/manojsatwase/manojsatwase.github.io/tree/master/todo" target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						
+							<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+							<div class="card ">
+					
+								<div class="projects-front">
+									<a href="https://mobileinformationsystem.herokuapp.com/">
+										<img src="images/logoShopingApp.jpe" class="img-thumbnail img-fluid" alt="">
+					
+										<h1 class="projects-front-footer-title">Mobile Information System Web App</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Web App </h2>
+											<p class="projects-body">My Main Purpose is how to Client and Server Communication using Back End Node JS and Client End technology like html css Javascript bootstrap4</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://mobileinformationsystem.herokuapp.com/" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://mobileinformationsystem.herokuapp.com/"
+												target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 react store-item wow zoomIn" data-item="react">
+							<div class="card">
+					
+								<div class="projects-front">
+									<a href="https://react-js-todo-list-project.netlify.com/">
+										<img src="images/reacttodo.jpg" class="img-thumbnail img-fluid" alt="react todo app">
+					
+										<h1 class="projects-front-footer-title">Todo APP</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">To-Do App With React</h2>
+											<p class="projects-body">Creating todo application using react and redux for state management.</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://react-js-todo-list-project.netlify.com/" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://github.com/manojsatwase/react-todo-list" target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 Website store-item wow zoomIn" data-item="Website">
+							<div class="card">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/MyResume/myresume.html">
+										<img src="images/resume.jpg" class="img-thumbnail img-fluid" alt="">
+					
+										<h1 class="projects-front-footer-title">My Resume</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Static web Site </h2>
+											<p class="projects-body">This is My Resume Website using HTLM , CSS3 and Bootstrap 4 </p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/MyResume/myresume.html" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/MyResume/myresume.html" target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 Website store-item wow zoomIn" data-item="Website">
+							<div class="card">
+					
+								<div class="projects-front">
+									<a href="./IPL_DEMO/Index.html">
+										<img src="images/IPL.jpeg" class="img-thumbnail img-fluid" alt="">
+					
+										<h1 class="projects-front-footer-title">IPL Projects</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Static web Site </h2>
+											<p class="projects-body">This is IPL static website only display Player Information using
+												HTMl,CSS and JAVASCRIPT</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="./IPL_DEMO/Index.html" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="./IPL_DEMO/Index.html" target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 Website store-item wow zoomIn" data-item="Website">
+							<div class="card">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/Tea_Station_Project/index.html">
+										<img src="images/teaBcg.jpeg" class="img-thumbnail img-fluid" alt="">
+					
+										<h1 class="projects-front-footer-title">TEA STATION</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Static web Site </h2>
+											<p class="projects-body">This is Tea Static WebSite using HTLM , Pure CSS and JAVASCRIPT</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/Tea_Station_Project/index.html"
+												target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/Tea_Station_Project/index.html"
+												target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+							<div class="card ">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/TODO_APP/TodoAPP.html">
+										<img src="images/tudo.jpeg" class="img-thumbnail img-fluid" alt="">
+					
+										<h1 class="projects-front-footer-title">Todo app</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Web App </h2>
+											<p class="projects-body">Mini Todo App to Display Item of List Using Technology is HTML , CSS3
+												and JavaScript ES6 Features</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/TODO_APP/TodoAPP.html">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/TODO_APP/TodoAPP.html" target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+							<div class="card ">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/MoneyRecords/index.html">
+										<img src="images/moneyRecords.jpeg" class="img-thumbnail img-fluid" alt="">
+					
+										<h1 class="projects-front-footer-title">Money Record to give Or take money for some people</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Web App </h2>
+											<p class="projects-body">This is Mini Money Record web App to Give OR Take Money For some people
+												using Technology is HTML , Bootstrap4 and JavaScript ES6 Features</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/MoneyRecords/index.html" target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/MoneyRecords/index.html"
+												target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div>
+								<!--projects-front -->
+							</div> <!-- card end -->
+						</div> <!-- col md 4 end  -->
+						<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+							<div class="card ">
+					
+								<div class="projects-front">
+									<a href="https://manojsatwase.github.io/About-course-instructor/course.html">
+										<img src="images/aboutCourse.jpeg" class="img-thumbnail img-fluid" alt="">
+					
+										<h1 class="projects-front-footer-title">about intsructor course list</h1>
+					
+										<div class="projects-back-hover">
+											<h2 class="projects-back-hover-title">Web App </h2>
+											<p class="projects-body">This is Mini about intsructor course list Project to display contains
+												dynamically List using Technology is HTML ,CSS3 and JavaScript ES6 Features</p>
+											<br>
+					
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/About-course-instructor/course.html"
+												target="_blank">Demo</a>
+											<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/About-course-instructor/course.html"
+												target="_blank">GitHub</a>
+					
+										</div>
+									</a>
+								</div><!--projects-front -->
+								</div>	<!-- card end -->
+							</div> <!-- col md 4 end  -->
+
+										<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+											<div class="card ">
+										
+												<div class="projects-front">
+													<a href="https://manojsatwase.github.io/random-quote/index.html">
+														<img src="images/quates.jpeg" class="img-thumbnail img-fluid" alt="">
+										
+														<h1 class="projects-front-footer-title">random-quote</h1>
+										
+														<div class="projects-back-hover">
+															<h2 class="projects-back-hover-title">Web App </h2>
+															<p class="projects-body">Random Quote Machine is a small web application to display random
+																inspirational quotes using Technology is HTML ,CSS3 and JavaScript ES6 Features</p>
+															<br>
+															<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/random-quote/index.html"
+																target="_blank">Demo</a>
+															<a class="btn btn-primary btn-lg mx-3"
+																href="https://manojsatwase.github.io/random-quote/index.html"
+																target="_blank">GitHub</a>
+										
+														</div>
+													</a>
+												</div><!--projects-front -->
+											</div><!-- card end -->
+										</div> <!-- col md 4 end  -->
+								<div class="col-lg-6 col-xl-4 store-item webapp wow zoomIn" data-item="webapp" data-wow-delay="0.5s">
+											<div class="card ">
+										
+												<div class="projects-front">
+													<a href="https://manojsatwase.github.io/Counter_Js_Project/index.html">
+														<img src="images/counter.jpeg" class="img-thumbnail img-fluid" alt="">
+										
+														<h1 class="projects-front-footer-title">Counter Project</h1>
+										
+														<div class="projects-back-hover">
+															<h2 class="projects-back-hover-title">Web App </h2>
+															<p class="projects-body">this is a Counter Project in increment and decrement number and using Technology is HTML ,CSS3 and JavaScript ES6 Features </p>
+															<br>
+															<a class="btn btn-primary btn-lg mx-3" href="https://manojsatwase.github.io/Counter_Js_Project/index.html"
+																target="_blank">Demo</a>
+															<a class="btn btn-primary btn-lg mx-3"
+																href="https://manojsatwase.github.io/Counter_Js_Project/index.html"
+																target="_blank">GitHub</a>
+										
+														</div>
+													</a>
+												</div><!--projects-front -->
+											</div><!-- card end -->
+										</div> <!-- col md 4 end  -->
+									</div>
+						</div> 
+				</section>
+					<!-- end of my work -->
+					<section class="row">
+						<div class="fill-screen background-attachment" style="background-image: url(./images/home-office-2.jpg);"></div>
+					</section>
+					</div>
+
+	<!-- end of container -->
+	
+	<footer class="container-fluid">
+		<div>
+			<p class="small-text">&copy; 2018 Copyright Manoj Satwase</p>
+			<div class="social">
+				<a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+				<a href="https://twitter.com/manoj_satwase"><i class="fab fa-twitter"></i></a>
+				<a href="https://github.com/manojsatwase/manojsatwase.github.io"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-codepen"></i></a>
+			</div>
+		</div>
+	</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="./js/animatescroll.min.js"></script>
+<script src="./js/wow.min.js"></script>
+
+<script src="js/app.js"></script>
+<script>
+	// Initialize tooltip component
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip({
+			delay: {
+				"show": 500, "hide": 300
+			}
+
+		});
+	})
+
+	// Initialize popover component
+	$(function () {
+		$('[data-toggle="popover"]').popover()
+         
+	})
+
+	new WOW().init();
+
+</script>
+</body>
+
+</html>
