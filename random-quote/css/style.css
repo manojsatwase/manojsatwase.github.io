@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Josefin+Slab|Nova+Square|Roboto&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+ line-height: 1.5;
+  background: #202020;
+	}
+  .container{
+   width: 100%;
+   position: relative;
+   
+  }
+  .quote-container{
+   max-width: 700px;
+   height: 250px;
+   position:relative;
+   margin: 10rem auto;
+   padding: 5rem 0;
+  background: #114B5F;
+  color: #fff;
+  overflow: hidden;
+
+  }
+  #quote-body{
+   font-size: 1rem;
+  }
+ #quote-btn {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom:15%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  display: block;
+  padding: 0.5em 1.5em;
+  background-color: #ff33cc;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  transition: all 0.4s ease-in-out;
+  font-size: 1.1em;
+  outline: none;
+}
+#quote-btn:hover {
+  cursor: pointer;
+}
+#quote , .quote-author{
+  margin: 2em 0;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  position: relative;
+  text-align: center;
+  
+}
+
+.quote-author{
+   display: block;
+   margin-right:20%;
+  font-size: 1rem;
+  text-align: right;
+  font-style: italic;
+}
+.show{
+   animation: fadeIn 1s ease 1;
+}
+@keyframes fadeIn {
+  from{
+    right: -100%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity 1;
+  }
+}
+
+
+@media (max-width:576px){
+ .container{
+  width:280px;
+  margin: 0 auto;
+ }
+ #quote{
+  font-size: 0.8rem;
+ }
+ .quote-author{
+  font-size: 0.7rem;
+ }
+ #quote-btn{
+  outline: none;
+  width: 110px;
+  font-size: 0.8rem;
+ }
+ 
+}
