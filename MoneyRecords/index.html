@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Money Record </title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+      :root {
+  --mainWhite: #f5f5f5f5;
+  --mainDark: #333333;
+  --mainGreen: #317b22;
+  --mainRed: #b80c09;
+  --mainBlue: #05668d;
+}
+
+     *{
+         padding: 0px;
+         margin: 0px;
+         box-sizing: border-box;
+     }
+  table i{
+         font-size: 20px;
+     }
+     .expenseFeedback{
+         display: none;
+     }
+     .showItem {
+      display: block;
+      background:;
+      
+}
+.edit-icon {
+  color: var(--mainBlue);
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none !important;
+}
+.delete-icon {
+  color: var(--mainRed);
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none !important;
+}
+.edit-icon:hover {
+  color: var(--mainBlue);
+}
+.delete-icon:hover {
+  color: var(--mainRed);
+}
+
+
+
+  </style>
+
+</head>
+<body>
+    <div class="container mt-5">
+            
+           
+        <div class="card p-5 border-primary">
+            <div class="card-title">
+                <p class="display-4  text-center"><i class="far fa-file-alt"></i></i> Money<span class="text-primary">Record</span></p>
+            </div>
+
+        <form id="Record-Form">
+            <div class="form-group">
+                <label for="PersonName">Person Name</label>
+                <input class="form-control" type="text" id="PersonName" maxlength="25">
+            </div>
+            <div class="form-group">
+                    <label for="title">Title : Give OR Take Money For</label>
+                    <input class="form-control" type="text" id="title" maxlength="50">
+            </div>
+                <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input class="form-control" type="number" id="amount">
+                </div>
+                    <div class="form-group">
+                            <label for="dmy">Day/Month/Year</label>
+                            <input class="form-control" type="date" id="dmy" >
+                     </div>
+                     <div class="form-group">
+                          <input class="btn btn-primary btn-block" type="submit" value="Add Record Money">
+                     </div>
+        </form>
+    </div>
+    <!-- card div end -->
+    <!-- card div -->
+    <div class="card border-primary" style="min-height:170px;" >
+        <table class="table table-striped table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>Person Name</th>
+                        <th>Title</th>
+                        <th>Amount</th>
+                        <th> Day/Month/Year</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                         <!-- <th><i class="fas fa-edit text-success" title="edit"></i></th>
+                         <th><i class="fas fa-pencil-alt text-success" title="update"></i></th>
+                         <th ><i class="far fa-trash-alt text-warning" title="delete"></i></th> -->
+                    </tr>
+                </thead>
+                <tbody id="RecoredList">
+                
+                </tbody>
+            </table>
+            </div> 
+            <!-- card div end  -->
+      
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
