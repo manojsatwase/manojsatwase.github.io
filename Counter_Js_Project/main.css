@@ -1,0 +1,31 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("img/tech.png") center/cover no-repeat;
+  /* background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat; */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+.counter-box {
+  flex: 0 0 70%;
+  text-align: center;
+  border: 3px solid grey;
+  padding: 1.5rem 1rem;
+  font-weight: bold;
+  box-shadow: 3px 3px 10px 10px black;
+}
+
+.counter {
+  font-size: 7rem;
+}
+
+.btn {
+  width: 150px;
+  margin: 0 1rem;
+}
