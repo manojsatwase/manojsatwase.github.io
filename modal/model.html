@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>model</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <header>
+  <div class="logo">
+   <h1 class="navbar-brand">Logo</h1>
+  </div>
+  <button type="button" id="Login__Button" class="btn-primary">Login</button>
+ </header>
+
+ <div class="modal fade">
+  <div class="modal__dialog">
+   <div class="modal__content">
+    <div class="modal__header">
+     <h1 class="modal__title text-center">Welcome!</h1>
+     <p class="modal__subtitle text-center">Enter your info below to login.</p>
+     <!-- <button type="button" class="close">
+      <span>&times;</span>
+     </button> -->
+    </div>
+    <div class="model__body">
+     <form action="#">
+      <div class="from__froup">
+       <label for="email" class="control-label">Your email</label>
+       <input type="text" name="email" id="email" placeholder="manojsatwasw@gmail.com" class="from__control">
+      </div>
+      <div class="from__froup">
+       <label for="password" class="control-label">Your password</label>
+       <input type="password" name="password" id="password" placeholder="manoj@123" class="from__control">
+      </div>
+      <button name="button" class="btn btn-primary " type="submit">Login</button>
+     </form>
+    </div>
+    <div class="modal-outer text-center">
+     <!-- <a class="text-w-700" href="/forgot-password" data-external-link-checked="true">Forgot your password?</a> -->
+     <a class="text-w-700" href="#" data-external-link-checked="true">Forgot your password?</a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- <div class="modal-backdrop"></div> -->
+ <script src="app.js"></script>
+</body>
+
+</html>

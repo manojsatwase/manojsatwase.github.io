@@ -1,0 +1,269 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+header {
+ background-color: #232F3E;
+ height: 100px;
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: #F7F8FC;
+}
+
+.navbar-brand {
+ float: left;
+ height: 50px;
+ padding: 7px 15px;
+ font-size: 23px;
+ line-height: 36px;
+}
+
+.logo {
+ padding: 25px 50px;
+ color: #767C81;
+}
+
+#Login__Button {
+ position: absolute;
+ top: 3%;
+ right: 10%;
+ transform: translate(-5%, 10%);
+ margin: 0 auto !important;
+ padding: 1rem;
+ font-weight: 800;
+ text-align: center;
+ white-space: nowrap;
+ vertical-align: middle;
+ touch-action: manipulation;
+ cursor: pointer;
+ background-image: none;
+ border: 1px solid transparent;
+ cursor: pointer;
+ outline: none;
+ border-radius: 5px;
+}
+
+.fade {
+ opacity: 0;
+ transition: opacity 0.15s linear;
+}
+
+.modal {
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ z-index: 1050;
+ display: none;
+ overflow: hidden;
+ -webkit-overflow-scrolling: touch;
+ outline: 0;
+}
+
+.in {
+ opacity: 1;
+ display: block;
+}
+
+.modal-dialog {
+ position: relative;
+ width: auto;
+ margin: 10px;
+}
+
+.modal.fade .modal__dialog,
+.modal.fade.in .modal__dialog,
+ {
+ transition-duration: 200ms !important;
+}
+
+.modal.in.fade .modal__dialog {
+ transform: scale(1);
+}
+
+.modal.fade .modal__dialog {
+ transform: scale(1.2);
+}
+
+.modal.in .modal__dialog {
+ transform: translate(0, 0);
+}
+
+.modal.fade .modal__dialog {
+ /* transform: translate(0, -25%); */
+ transition: transform 0.3s ease-out;
+}
+
+.fade.in {
+ opacity: 1;
+}
+
+@media (max-width: 768px) {
+ .modal-dialog {
+  position: absolute;
+  margin-top: 0 !important;
+  width: 380px;
+  height: auto;
+ }
+ .modal__content {
+  border: 1px solid red;
+  width: 340px !important;
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  outline: 0;
+  margin: 5rem auto !important;
+ }
+}
+
+.modal__content {
+ border: 1px solid red;
+ width: 478px;
+ position: relative;
+ background-color: #fff;
+ background-clip: padding-box;
+ border: 1px solid #999;
+ border: 1px solid rgba(0, 0, 0, 0.2);
+ border-radius: 8px;
+ box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+ outline: 0;
+ margin: 10rem auto;
+}
+
+.modal__header {
+ background: #f7f8fc;
+ border-radius: 8px 8px 0 0;
+}
+
+.modal__header {
+ padding: 30px;
+ border-bottom: 1px solid #e0e7ed;
+}
+
+.text-center {
+ text-align: center;
+}
+
+.modal__title {
+ line-height: 1.5;
+ font-size: 2.4rem;
+ font-weight: 500;
+ color: #36434d;
+}
+
+.modal__subtitle {
+ line-height: 1.5;
+ color: #6B757D;
+}
+
+.modal__body {
+ position: relative;
+ padding: 30px;
+}
+
+.control-label {
+ margin: 5 0 1rem 0;
+ padding: 10px 50px;
+ color: #36434d;
+ font-weight: 500;
+ font-size: 1.2rem;
+ line-height: 1.15;
+ display: block;
+}
+
+.from__control {
+ outline: none;
+ display: block;
+ width: 80%;
+ height: 52px;
+ padding: 6px 12px;
+ font-size: 18px;
+ line-height: 2;
+ margin: 0 auto;
+ color: #36434d;
+ background-color: #f7f8fc;
+ background-image: none;
+ border: 1px solid #e0e7ed;
+ border-radius: 5px;
+ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.btn {
+ font-size: 1.4rem;
+ line-height: 2rem;
+ padding: 0.5rem 1.5rem;
+ transition-duration: 0.35s;
+ margin: 30px auto;
+ display: block;
+ width: 80%;
+ outline: none;
+}
+
+.btn {
+ cursor: pointer;
+}
+
+.btn:hover,
+#Login__Button:hover {
+ background-color: #673ab7;
+}
+
+.btn-primary {
+ color: #fff;
+ background-color: #ad97ef;
+ border-color: transparent;
+}
+
+.modal-outer {
+ color: rgba(255, 255, 255, 0.7);
+ position: absolute;
+ width: 100%;
+ padding: 2.5rem;
+ font-size: 0.8rem;
+ line-height: 2.25;
+}
+
+.modal__backdrop.fade,
+.modal__backdrop.fadein {
+ transition-duration: 200ms !important;
+}
+
+.modal-backdrop {
+ position: fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ z-index: 1040;
+ background-color: rgba(0, 0, 0, .8);
+ /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
+}
+
+.text-w-700 {
+ font-weight: 100 !important;
+}
+
+a {
+ color: rgba(255, 255, 255, 0.7);
+ text-decoration: none;
+}
+
+a {
+ background-color: transparent;
+}
+
+a:hover {
+ text-decoration: underline;
+}
