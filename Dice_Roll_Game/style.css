@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(images/playerLoader.gif) 50% 50% no-repeat rgb(249, 249, 249);
+  background-color: #000 !important;
+}
+/* loading msg */
+.loadingImg {
+  z-index: 9999;
+  color: #999;
+  top: 37%;
+  left: 35%;
+  position: relative;
+  font-size: 35px;
+}
+body {
+  background-image: url("images/BackgImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.modal-body {
+  background: #ebebeb;
+}
+#how_To_Play_Btn {
+  position: absolute;
+  top: 1em !important;
+  right: 2% !important;
+  outline: none !important;
+}
+#close_Btn {
+  outline: none !important;
+  font-size: 2rem;
+}
+header #header__title {
+  text-align: center !important;
+}
+header {
+  background: #eae9eb;
+  position: relative;
+  padding: 10px;
+}
+#modal-title_Text {
+  padding-left: 50%;
+}
+/* gameButton */
+section {
+  position: relative;
+}
+.gameButton {
+  position: absolute;
+}
+.gameButton,
+#btn,
+#palyer1_Button {
+  position: absolute;
+  top: 50% !important;
+  left: 5%;
+  cursor: pointer;
+  z-index: 999;
+}
+.gameButton,
+#btn2,
+#palyer2_Button {
+  position: absolute;
+  top: 50% !important;
+  right: 5%;
+  z-index: 999;
+  cursor: pointer;
+}
+/* button hide and show */
+.hide {
+  display: none !important;
+}
+/* imgage */
+
+.diceRoll img {
+  animation: animationEffect 1s linear;
+  position: absolute;
+  width: 380px;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  z-index: -999;
+}
+@keyframes animationEffect {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(2);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* score box */
+.score_box {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  transform: translate(-20%, -45%);
+  width: 250px;
+  height: auto;
+}
+.score_box .player1,
+.player2 {
+  padding-left: 10px;
+  font-size: 2rem;
+}
+@media screen and (max-width: 578px) {
+  .loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(images/playerLoader.gif) 50% 50% no-repeat
+      rgb(249, 249, 249);
+    background-color: #000 !important;
+  }
+  .loadingImg {
+    font-size: 0.8rem !important;
+    left: 30% !important;
+  }
+  body {
+    background: #24292e !important;
+  }
+  header > h2 {
+    font-size: 0.5rem;
+  }
+  header #how_To_Play_Btn {
+    top: 10% !important;
+    width: 70px !important;
+    font-size: 0.5rem;
+    cursor: pointer;
+  }
+  .score_box {
+    top: 25%;
+    left: 32%;
+  }
+
+  .diceRoll img {
+    width: 120px;
+    height: auto;
+  }
+  .modal {
+    width: 340px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 0.6rem;
+  }
+  .modal-header h3 {
+    font-size: 1.5rem;
+  }
+}
+#btn-replay {
+  display: none;
+  margin: 0 auto;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  z-index: 999;
+  cursor: pointer;
+}
+/* winner Images */
+.wonImg img {
+  width: 100%;
+  height: auto;
+  background-attachment: fixed;
+  z-index: -999;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.winnerMsg {
+  color: green;
+  text-align: center;
+  z-index: 999;
+  font-size: 2rem;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Doce Roll Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="loader">
+      <h1 class="loadingImg">Please Wait for Game Start</h1>
+    </div>
+    <header>
+      <a
+        id="how_To_Play_Btn"
+        href="#"
+        class="btn btn-success float-right"
+        data-toggle="modal"
+        data-target="#openDialog"
+        >How To Play</a
+      >
+      <h2 id="header__title">Dice Roll Will Win after The Score is 50</h2>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="gameButton">
+          <button id="btn" class="btn btn-success hide" type="button">
+            Player 1
+          </button>
+          <button id="btn2" class="btn btn-warning hide" type="button">
+            Player 2
+          </button>
+          <button id="palyer1_Button" class="btn btn-success" type="button">
+            Player 1
+          </button>
+          <button id="palyer2_Button" class="btn btn-warning" type="button">
+            Player 2
+          </button>
+          <div class="diceRoll"></div>
+        </div>
+      </div>
+    </div>
+    <!-- button section end -->
+    <!-- score Box -->
+    <div class="container">
+      <div class="row">
+        <section class="score_box">
+          <table class="table bg-dark text-white text-center">
+            <head>
+              <th>
+                Player Name
+                <span class="fnameplayer text-success">Player1</span>
+              </th>
+              <th>
+                Player Name
+                <span class="lnameplayer text-warning">Player2</span>
+              </th>
+            </head>
+
+            <body class="playerListAndName">
+              <tr>
+                <td class="player1 text-success">0</td>
+                <td class="player2 text-warning">0</td>
+              </tr>
+            </body>
+          </table>
+        </section>
+      </div>
+    </div>
+    <!--player win section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="winnerMsg"></div>
+          <button
+            type="button"
+            id="btn-replay"
+            class="btn btn-primary"
+            onclick="window.location.reload()"
+          >
+            Play Again
+          </button>
+          <div class="wonImg"></div>
+        </div>
+      </div>
+    </div>
+    <!-- how to play -->
+    <!-- modal  start -->
+    <div class="modal fade " id="openDialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title mx-auto text-success" id="modal-title_Text ">
+              How To Play Dice Game
+            </h3>
+            <button
+              id="close_Btn"
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body pb-5 pt-4">
+            <h4 class="text-primary pb-3">Game Rules</h4>
+            <ul class="list-group text-dark">
+              <li class="list-group-item">
+                1 . Win The Toss By Getting 6 Who got the 6 then he/she will be
+                the first.
+              </li>
+              <li class="list-group-item">
+                2. By Getting 6 You Will get the Dice to Roll Again.
+              </li>
+              <li class="list-group-item">3. Reach To Score 50 To Win Game</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script language="javascript">
+      $("document").ready(function(e) {
+        $(".loader").fadeOut(3500);
+      });
+    </script>
+  </body>
+</html>
