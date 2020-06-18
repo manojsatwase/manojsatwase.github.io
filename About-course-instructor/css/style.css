@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(0, 0, 0, 0.9);
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 5px;
+}
+.aboutCourse {
+  margin-top: 20px;
+}
+.result {
+  border: 1px solid #999;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 2em;
+}
+/* .result:nth-child(even) {
+        background: ;
+      }
+      .result:nth-child(odd) {
+        background: ;
+      } */
+
+.result .title {
+  font-weight: bold;
+  color: #30bced;
+}
+.result .instructor,
+.level,
+.totol-video {
+  font-weight: bold;
+}
+
+.result:hover {
+  background-color: #202020;
+  color: #fff;
+  border: solid 1px blue;
+}
+.result:hover h2 {
+  color: #62a87c;
+}
+
+.boxed {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+/* h2 {
+  text-align: left;
+} */
+h2 {
+  color: #3c4859;
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .thumnail {
+    position: absolute;
+    display: grid;
+    vertical-align: center;
+    margin-top: 15px;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+  }
+}
