@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Moble Information System</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- font awesmome -->
+    <script src="https://kit.fontawesome.com/215e28a68e.js"></script>
+    <style>
+      #home-section {
+        background: url("images/bacg.jpg") no-repeat center top fixed;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 93.8vh;
+      }
+      .card-form {
+        margin-top: 5rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="hideLoginPage" style="display:block">
+      <!-- navbar create -->
+      <nav class="navbar bg-dark fixed-top">
+        <div class="container">
+          <div class="row">
+            <a href="#" class="navbar-brand text-white"
+              >Company<span class="text-primary">Logo</span></a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Home Section -->
+      <header id="home-section" class="mt-5 p-5">
+        <div class="dark-overlay">
+          <div class="home-inner">
+            <div class="row">
+              <div class="col-md-8 d-none d-md-block">
+                <h1 class="display-4 text-primary font-italic">
+                  Mobile Shopping Application
+                </h1>
+                <!-- d-flex start -->
+                <div class="d-flex flex-row mt-5">
+                  <div class="p-4 align-self-start">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="p-4 align-self-end">
+                    <p class="text-white">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dicta, consequuntur enim! Repellat sapiente voluptas at
+                      tempore, delectus doloremque a. Sunt.
+                    </p>
+                  </div>
+                </div>
+                <!-- d flex end -->
+                <!-- d-flex start -->
+                <div class="d-flex flex-row">
+                  <div class="p-4 align-self-start">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="p-4 align-self-end">
+                    <p class="text-white">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dicta, consequuntur enim! Repellat sapiente voluptas at
+                      tempore, delectus doloremque a. Sunt.
+                    </p>
+                  </div>
+                </div>
+                <!-- d flex end -->
+                <!-- d-flex start -->
+                <div class="d-flex flex-row">
+                  <div class="p-4 align-self-start">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="p-4 align-self-end">
+                    <p class="text-white">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dicta, consequuntur enim! Repellat sapiente voluptas at
+                      tempore, delectus doloremque a. Sunt.
+                    </p>
+                  </div>
+                </div>
+                <!-- d flex end -->
+                <!-- d-flex start -->
+                <div class="d-flex flex-row">
+                  <div class="p-4 align-self-start">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="p-4 align-self-end">
+                    <p class="text-white">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dicta, consequuntur enim! Repellat sapiente voluptas at
+                      tempore, delectus doloremque a. Sunt.
+                    </p>
+                  </div>
+                </div>
+                <!-- d flex end -->
+              </div>
+              <!-- col -md-8 end -->
+              <div
+                class="col col-md-4 col-lg-4"
+                style="width: 18rem;font-size: 1rem;"
+              >
+                <div class="card  text-center card-form" id="1">
+                  <div class="card-block">
+                    <h3 class="pt-4 login-title text-primary">Sing Up Today</h3>
+                    <p class="text-capitalize p-1 ">
+                      Please fill out this form to resister
+                    </p>
+                    <form method="POST" action="/app/login" id="LoginForm">
+                      <div class="form-group px-5">
+                        <input
+                          autocomplete="off"
+                          id="username"
+                          type="text"
+                          class="form-control form-control-lg"
+                          placeholder="Username"
+                        />
+                      </div>
+
+                      <div class="form-group px-5 pb-1">
+                        <input
+                          autocomplete="off"
+                          type="email"
+                          id="email"
+                          class="form-control form-control-lg"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="form-group px-5 pb-1">
+                        <input
+                          autocomplete="off"
+                          id="password"
+                          type="password"
+                          class="form-control form-control-lg"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="form-group px-5 pb-1">
+                        <input
+                          autocomplete="off"
+                          id="confirm_password"
+                          type="password"
+                          class="form-control form-control-lg"
+                          placeholder="Confirm_Password"
+                        />
+                      </div>
+                      <div class="pb-3 px-2">
+                        you are already registered?
+                        <a
+                          href="#openDialog"
+                          data-toggle="modal"
+                          class="text-primary"
+                          >Log In</a
+                        >
+                      </div>
+
+                      <div class="pb-5">
+                        <input
+                          class="btn btn-primary btn-block  btn-xl"
+                          id="submutButton"
+                          type="submit"
+                          name="submit"
+                          value="Submit"
+                        />
+                        <div class="msg px-5"></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <!-- another page -->
+    <!-- navabr -->
+    <section id="showLogin" style="display: none">
+      <header class="header navbar bg-dark">
+        <h1>
+          <a href="#" class="text-white navbar-brand"
+            >Company<span class="logo   text-primary">logo</span></a
+          >
+        </h1>
+        <a
+          class="btnLogOut btn btn-danger "
+          href="https://mobileinformationsystem.herokuapp.com/"
+          >Log Out</a
+        >
+      </header>
+      <!-- navbar end -->
+      <!-- carasoul -->
+      <div class="container-fluid visible-md visible-lg home-carousel ">
+        <div class="row">
+          <div class="carousel slide" id="myCorousel" data-interval="2000">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCorousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCorousel" data-slide-to="1"></li>
+              <li data-target="#myCorousel" data-slide-to="2"></li>
+              <li data-target="#myCorousel" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="images/carasoul-1.jpg" />
+                <div class="carousel-caption">
+                  <h3>iphone</h3>
+                  <p>Special iphone Mobile offer</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="images/carasoul-2.jpg" />
+                <div class="carousel-caption">
+                  <h3>Poco F1</h3>
+                  <p>Special Poco F1 special mobile phone</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block" src="images/carasoul-3.jpg" />
+                <div class="carousel-caption">
+                  <h3>Oppo f1</h3>
+                  <p>Special Oppo mobile Phone</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="images/carasoul-4.jpg" />
+                <div class="carousel-caption">
+                  <h3>Mi 4K Tv</h3>
+                  <p>Special Mi 4k Tv Hight quality HD supported</p>
+                </div>
+              </div>
+            </div>
+            <!-- carousel-inner end -->
+            <a
+              class="carousel-control-prev"
+              href="#myCorousel"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCorousel"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+        <!-- row end -->
+      </div>
+      <!-- container end -->
+      <!-- end carasoul -->
+
+      <!--  server data and app.js -->
+      <article class="mainSection">
+        <div class="cardInfoDiv ">
+          <h2 class="display-3 pb-5 bg-dark text-white">
+            <em>shopping card</em>
+          </h2>
+        </div>
+
+        <div class="cardItemDiv container-fluid">
+          <div class="cardItem row  bg-dark"></div>
+        </div>
+      </article>
+    </section>
+    <footer id="footer">
+      <p>&copy; 2019 Copyright Mobile Shopping App</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      (function() {
+        $("#myCorousel").carousel();
+      })();
+    </script>
+  </body>
+</html>
