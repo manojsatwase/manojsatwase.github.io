@@ -54,6 +54,15 @@ input {
  .search__title {
   font-size: 1.5rem;
  }
+ .card {
+  width: 340px !important;
+  font-size: 1rem;
+ }
+ img {
+  height: 150px;
+  overflow: hidden;
+  background-size: cover;
+ }
 }
 
 h4 {
